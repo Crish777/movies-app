@@ -4,10 +4,10 @@ export const sendEmailToken = async (templateParams) => {
   try {
     await emailjs
         .send(
-          "service_7cf0vnn",
-          "template_r1nfa8c",
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
           templateParams.templateParams,
-          "WxwGrsHn8f5s2YbJC"
+          import.meta.env.VITE_EMAIL_KEY
         )
         return {success: true}
   } catch (error) {

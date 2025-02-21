@@ -1,5 +1,5 @@
 export const getSessionId = async (request_token, approved) => {
-  const url = "http://localhost:3000/api/get-session";
+  const url = "https://movies-backend-psi.vercel.app/api/get-session";
   const options = {
     method: "POST",
     headers: {
