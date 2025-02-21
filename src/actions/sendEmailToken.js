@@ -1,7 +1,6 @@
 import emailjs from "emailjs-com";
 
 export const sendEmailToken = async (templateParams) => {
-  console.log(templateParams.templateParams);
   try {
     await emailjs
         .send(

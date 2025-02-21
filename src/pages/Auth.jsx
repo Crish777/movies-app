@@ -47,7 +47,7 @@ const Auth = () => {
   return (
     <div className='flex items-center justify-center min-h-screen flex-col'>
       <div className='mb-12'>
-        <h1 className='text-center '>
+        <h1 className='text-center text-black dark:text-white text-xl font-bold '>
           Solicita un token para guardar tus películas favoritas
         </h1>
       </div>
@@ -66,7 +66,7 @@ const Auth = () => {
               value={form.name}
               onChange={handleChange}
               required
-              className='disabled:opacity-50 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'
+              className='disabled:opacity-50 w-full sm:w-auto py-2 px-4 bg-slate-300 dark:bg-slate-950 text-black dark:text-white placeholder:text-black dark:text-white rounded-md outline-none focust:outline-none mb-4'
               id='inline-full-name'
               type='text'
               placeholder='Jhon Doe'
@@ -88,7 +88,7 @@ const Auth = () => {
               name='to_email'
               value={form.to_email}
               onChange={handleChange}
-              className='disabled:opacity-50 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500'
+              className='disabled:opacity-50 w-full sm:w-auto py-2 px-4 bg-slate-300 dark:bg-slate-950 text-black dark:text-white placeholder:text-black dark:placeholder:text-white rounded-md outline-none focust:outline-none mb-4'
               id='inline-password'
               type='email'
               placeholder='tuemail@example.com'
@@ -101,7 +101,7 @@ const Auth = () => {
           <div className='md:w-2/3'>
             <button
               disabled={loading}
-              className='shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded'
+              className='w-full sm:w-auto shadow bg-slate-800 hover bg-slate-300:dark:bg-slate-950 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded cursor-pointer transition-all duration-300'
               type='submit'>
               Enviar
             </button>

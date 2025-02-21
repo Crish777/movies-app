@@ -1,12 +1,12 @@
-export const getSessionId = async () => {
-  const url = "https://api.themoviedb.org/3/authentication/guest_session/new";
+export const getSessionId = async (request_token, approved) => {
+  const url = "http://localhost:3000/api/get-session";
   const options = {
-    method: "GET",
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${import.meta.env.VITE_READ_ACCESS_TOKEN}`,
-      body: JSON.stringify({request_token: 'aasdjfhsadkfakjsf', approved: 'true'})
-    },
+    },    
+    body: JSON.stringify({request_token: request_token, approved: approved})
   };
 
   try {
