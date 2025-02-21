@@ -7,7 +7,7 @@ export const sendEmailToken = async (templateParams) => {
           import.meta.env.VITE_SERVICE_ID,
           import.meta.env.VITE_TEMPLATE_ID,
           templateParams.templateParams,
-          import.meta.env.VITE_EMAIL_KEY
+          import.meta.env.VITE_EMAIL_ID
         )
         return {success: true}
   } catch (error) {
