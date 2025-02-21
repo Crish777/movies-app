@@ -68,11 +68,12 @@ const Home = () => {
           day < 10 ? `0${day}` : day
         }`;
       }
-      filterMovies({ genreSelected, byVotes, dateString });
       setResetFilters(false);
+      filterMovies({ genreSelected, byVotes, dateString });
       return;
     }
     if (search) {
+      setResetFilters(false);
       searchMovies(search);
     }
   };
