@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.VITE_BASE_PATH || '/deploy_react_app_github_pages_vercel',
+  base: process.env.VITE_BASE_PATH || 'https://movies-app-six-pi.vercel.app/',
 })
 
